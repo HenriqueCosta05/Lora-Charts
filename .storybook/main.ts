@@ -4,7 +4,7 @@ const config: StorybookConfig = {
   "stories": [
     "../src/**/*.stories.@(js|jsx|mjs|ts|tsx)"
   ],
-  "addons": [],
+  "addons": ["@storybook/addon-vitest"],
   "framework": "@storybook/angular"
 };
 export default config;

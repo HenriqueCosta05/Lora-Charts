@@ -1,13 +1,17 @@
 {
-  "name": "angular-latest",
-  "version": "0.0.0",
+  "name": "lora-charts",
+  "version": "0.0.1",
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
     "storybook": "ng run angular-latest:storybook",
-    "build-storybook": "ng run angular-latest:build-storybook"
+    "build-storybook": "ng run angular-latest:build-storybook",
+    "test": "vitest",
+    "test:watch": "vitest --watch",
+    "test:ui": "vitest --ui",
+    "test:coverage": "vitest --coverage"
   },
   "prettier": {
     "printWidth": 100,
@@ -34,19 +38,23 @@
     "tslib": "^2.3.0"
   },
   "devDependencies": {
+    "@angular-devkit/architect": "^0.2101.0",
+    "@angular-devkit/build-angular": "^21.1.0",
+    "@angular-devkit/core": "^21.1.0",
     "@angular/build": "^21.1.0",
     "@angular/cli": "^21.1.0",
     "@angular/compiler-cli": "^21.1.0",
-    "jsdom": "^27.1.0",
-    "typescript": "~5.9.2",
-    "vitest": "^4.0.8",
-    "storybook": "^10.1.11",
-    "@storybook/angular": "^10.1.11",
-    "@angular-devkit/build-angular": "^21.1.0",
-    "@angular-devkit/architect": "^0.2101.0",
-    "@angular-devkit/core": "^21.1.0",
     "@angular/platform-browser-dynamic": "^21.1.0",
     "@compodoc/compodoc": "^1.2.1",
-    "@storybook/addon-docs": "^10.1.11"
+    "@storybook/addon-docs": "^10.1.11",
+    "@storybook/addon-vitest": "^10.1.11",
+    "@storybook/angular": "^10.1.11",
+    "@types/jest": "^30.0.0",
+    "@vitest/coverage-v8": "^4.0.17",
+    "jsdom": "^27.1.0",
+    "storybook": "^10.1.11",
+    "typescript": "~5.9.2",
+    "vitest": "^4.0.8",
+    "zone.js": "^0.16.0"
   }
 }
