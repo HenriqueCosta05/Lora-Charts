@@ -269,7 +269,7 @@ export abstract class BaseChart {
     protected addGlassEffect(selection: d3.Selection<any, any, any, any>, strength: 'subtle' | 'medium' | 'strong' = 'medium'): void {
         const opacityMap = { subtle: 0.5, medium: 0.7, strong: 0.85 };
         selection
-            .style('fill', function() {
+            .style('fill', function () {
                 const currentFill = d3.select(this).style('fill');
                 return currentFill;
             })
@@ -286,7 +286,7 @@ export abstract class BaseChart {
                     .duration(200)
                     .ease(d3.easeCubicOut)
                     .style('filter', 'url(#glow-strong) url(#shadow-3d-strong)')
-                    .attr('transform', function() {
+                    .attr('transform', function () {
                         const current = d3.select(this).attr('transform') || '';
                         return current + ` scale(${scale})`;
                     });
@@ -297,7 +297,7 @@ export abstract class BaseChart {
                     .duration(200)
                     .ease(d3.easeCubicOut)
                     .style('filter', 'url(#shadow-3d)')
-                    .attr('transform', function() {
+                    .attr('transform', function () {
                         const current = d3.select(this).attr('transform') || '';
                         return current.replace(` scale(${scale})`, '');
                     });
@@ -305,10 +305,10 @@ export abstract class BaseChart {
     }
 
     protected add3DDepth(selection: d3.Selection<any, any, any, any>, depth: number = 4): void {
-        selection.each(function() {
+        selection.each(function () {
             const element = d3.select(this);
             const color = element.attr('fill') || element.style('fill');
-            
+
             // Create depth layers
             for (let i = depth; i > 0; i--) {
                 const depthLayer = element.clone(true);
