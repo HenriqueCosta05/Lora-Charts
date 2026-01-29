@@ -1,0 +1,83 @@
+{
+    "mode": "light",
+    "colors": {
+        "primary": "#0071e3",
+        "secondary": "#8e44ff",
+        "background": "#f5f5f7",
+        "text": "#1d1d1f",
+        "border": "rgba(0, 0, 0, 0.08)",
+        "error": "#ff3b30",
+        "warning": "#ff9500",
+        "success": "#34c759",
+        "shadow": "rgba(0, 0, 0, 0.1)",
+        "glass": "rgba(255, 255, 255, 0.72)",
+        "glassHover": "rgba(255, 255, 255, 0.88)",
+        "glassBorder": "rgba(255, 255, 255, 0.18)",
+        "accent1": "#ff2d55",
+        "accent2": "#5ac8fa",
+        "accent3": "#ff9f0a",
+        "accent4": "#af52de",
+        "accent5": "#30d158",
+        "gradient1": [
+            "#667eea",
+            "#764ba2"
+        ],
+        "gradient2": [
+            "#f093fb",
+            "#f5576c"
+        ],
+        "gradient3": [
+            "#4facfe",
+            "#00f2fe"
+        ],
+        "gradient4": [
+            "#43e97b",
+            "#38f9d7"
+        ],
+        "gradient5": [
+            "#fa709a",
+            "#fee140"
+        ]
+    },
+    "fonts": {
+        "family": "-apple-system, BlinkMacSystemFont, 'SF Pro Display', 'SF Pro Text', 'Helvetica Neue', Inter, system-ui, sans-serif",
+        "size": {
+            "xs": 11,
+            "sm": 13,
+            "md": 15,
+            "lg": 17,
+            "xl": 20,
+            "xxl": 28
+        },
+        "weight": "normal"
+    },
+    "borders": {
+        "radius": "16px",
+        "width": "1.5px",
+        "style": "solid"
+    },
+    "spacing": {
+        "xs": 4,
+        "sm": 8,
+        "md": 16,
+        "lg": 24,
+        "xl": 32,
+        "xxl": 48
+    },
+    "animations": {
+        "duration": 400,
+        "easing": "cubic-bezier(0.28, 0.11, 0.32, 1)"
+    },
+    "effects": {
+        "blur": "40px",
+        "blurStrong": "80px",
+        "shadow3d": "0 25px 80px rgba(0, 0, 0, 0.10), 0 15px 40px rgba(0, 0, 0, 0.08), 0 5px 15px rgba(0, 0, 0, 0.06)",
+        "shadowHover": "0 35px 100px rgba(0, 0, 0, 0.13), 0 20px 50px rgba(0, 0, 0, 0.10), 0 8px 20px rgba(0, 0, 0, 0.08)",
+        "shadowInner": "inset 0 1px 0 rgba(255, 255, 255, 0.8), inset 0 0 20px rgba(255, 255, 255, 0.3)",
+        "glassGradient": "linear-gradient(135deg, rgba(255, 255, 255, 0.6) 0%, rgba(255, 255, 255, 0.2) 50%, rgba(255, 255, 255, 0.05) 100%)",
+        "glassBackground": "rgba(255, 255, 255, 0.72)",
+        "glassBorder": "1.5px solid rgba(255, 255, 255, 0.18)",
+        "perspective": "1200px",
+        "transform3d": "translateZ(0) rotateX(0) rotateY(0)"
+    }
+}

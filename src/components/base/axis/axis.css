@@ -1,0 +1,43 @@
+:host {
+    display: contents;
+}
+
+.axis {
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.axis .domain {
+    stroke-width: 2;
+    shape-rendering: crispEdges;
+}
+
+.axis .tick line {
+    transition: opacity 0.3s ease, stroke 0.3s ease;
+    shape-rendering: crispEdges;
+}
+
+.axis .tick text {
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    font-weight: 500;
+    letter-spacing: 0.3px;
+}
+
+.axis .tick:hover text {
+    fill: var(--color-primary, #3b82f6);
+    font-weight: 600;
+    transform: scale(1.05);
+}
+
+.axis-label {
+    letter-spacing: 0.8px;
+    text-transform: uppercase;
+    font-weight: 700;
+    transition: all 0.3s ease;
+    user-select: none;
+}
+
+.grid-line {
+    transition: opacity 0.3s ease, stroke 0.3s ease;
+    shape-rendering: crispEdges;
+    pointer-events: none;
+}

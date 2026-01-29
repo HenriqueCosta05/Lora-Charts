@@ -1,0 +1,17 @@
+<div class="chart-header" *ngIf="title || subtitle">
+    <h3 class="chart-title" *ngIf="title">{{ title }}</h3>
+    <p class="chart-subtitle" *ngIf="subtitle">{{ subtitle }}</p>
+</div>
+
+<div class="chart-content" [class.chart-loading]="loading">
+    <ng-content></ng-content>
+
+    <div class="chart-loading-overlay" *ngIf="loading" aria-live="polite" aria-busy="true">
+        <div class="chart-loading-spinner"></div>
+        <span class="chart-loading-text">Loading...</span>
+    </div>
+</div>
+
+<div class="chart-footer" *ngIf="footer">
+    <p class="chart-footer-text">{{ footer }}</p>
+</div>

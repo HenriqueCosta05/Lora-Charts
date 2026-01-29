@@ -1,0 +1,22 @@
+:host {
+    display: block;
+}
+
+.wordcloud-container {
+    width: 100%;
+    height: 100%;
+}
+
+.wordcloud-svg {
+    display: block;
+}
+
+.word {
+    cursor: pointer;
+    transition: transform 0.2s ease, filter 0.2s ease;
+    user-select: none;
+}
+
+.word-shadow {
+    pointer-events: none;
+}

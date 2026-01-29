@@ -1,0 +1,35 @@
+.treemap-container {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: transparent;
+}
+
+.treemap-svg {
+  overflow: visible;
+}
+
+:host ::ng-deep .cell {
+  transition: all 0.3s cubic-bezier(0.28, 0.11, 0.32, 1);
+}
+
+:host ::ng-deep .cell-rect {
+  stroke: rgba(255, 255, 255, 0.2);
+  stroke-width: 2px;
+  transition: all 0.3s cubic-bezier(0.28, 0.11, 0.32, 1);
+}
+
+:host ::ng-deep .cell-shadow {
+  filter: blur(3px);
+}
+
+:host ::ng-deep .cell-label,
+:host ::ng-deep .cell-value {
+  font-family: -apple-system, BlinkMacSystemFont, 'SF Pro Display', sans-serif;
+  user-select: none;
+}
+
+:host ::ng-deep .cell:hover .cell-rect {
+  stroke-width: 3px;
+}
