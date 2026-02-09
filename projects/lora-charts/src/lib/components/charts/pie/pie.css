@@ -1,0 +1,32 @@
+:host {
+    display: block;
+}
+
+.pie-container {
+    width: 100%;
+    height: 100%;
+}
+
+.pie-svg {
+    display: block;
+}
+
+.slice {
+    cursor: pointer;
+    transition: d 0.2s ease;
+}
+
+.slice-glass {
+    mix-blend-mode: overlay;
+}
+
+.slice-label,
+.donut-total-label,
+.donut-total-value {
+    pointer-events: none;
+    user-select: none;
+}
+
+.label-line {
+    pointer-events: none;
+}

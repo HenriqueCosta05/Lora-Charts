@@ -5,13 +5,16 @@
     "ng": "ng",
     "start": "ng serve",
     "build": "ng build",
+    "build:lib": "ng build lora-charts --configuration production",
     "watch": "ng build --watch --configuration development",
     "storybook": "ng run angular-latest:storybook",
     "build-storybook": "ng run angular-latest:build-storybook",
     "test": "vitest",
     "test:watch": "vitest --watch",
     "test:ui": "vitest --ui",
-    "test:coverage": "vitest --coverage"
+    "test:coverage": "vitest --coverage",
+    "prepublish:lib": "npm run build:lib",
+    "publish:lib": "npm run build:lib && cd dist/lora-charts && npm publish --access public"
   },
   "prettier": {
     "printWidth": 100,
@@ -25,8 +28,7 @@
       }
     ]
   },
-  "private": true,
-  "packageManager": "npm@11.7.0",
+  "private": false,
   "dependencies": {
     "@angular/common": "^21.1.0",
     "@angular/compiler": "^21.1.0",
@@ -39,6 +41,7 @@
     "d3": "^7.9.0",
     "d3-cloud": "^1.2.8",
     "rxjs": "~7.8.0",
+    "topojson-client": "^3.1.0",
     "tslib": "^2.3.0"
   },
   "devDependencies": {
@@ -54,8 +57,11 @@
     "@storybook/addon-vitest": "^10.1.11",
     "@storybook/angular": "^10.1.11",
     "@types/jest": "^30.0.0",
+    "@types/topojson-client": "^3.1.5",
+    "@types/topojson-specification": "^1.0.5",
     "@vitest/coverage-v8": "^4.0.17",
     "jsdom": "^27.1.0",
+    "ng-packagr": "^21.1.0",
     "storybook": "^10.1.11",
     "typescript": "~5.9.2",
     "vitest": "^4.0.8",

@@ -1,0 +1,25 @@
+:host {
+    display: block;
+}
+
+.area-chart-container {
+    width: 100%;
+    height: 100%;
+}
+
+.area-chart-svg {
+    display: block;
+}
+
+.area-path {
+    transition: opacity 0.3s ease;
+}
+
+.area-line {
+    transition: stroke-width 0.2s ease;
+}
+
+.area-point {
+    cursor: pointer;
+    transition: r 0.2s ease, stroke-width 0.2s ease;
+}

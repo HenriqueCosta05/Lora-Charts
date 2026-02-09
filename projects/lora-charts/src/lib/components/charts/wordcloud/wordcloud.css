@@ -11,8 +11,12 @@
     display: block;
 }
 
-.wordcloud-svg text {
+.word {
     cursor: pointer;
-    transition: font-size 0.2s ease;
+    transition: transform 0.2s ease, filter 0.2s ease;
     user-select: none;
+}
+
+.word-shadow {
+    pointer-events: none;
 }

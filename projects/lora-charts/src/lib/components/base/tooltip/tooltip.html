@@ -1,0 +1,18 @@
+<div class="tooltip-container" [class.visible]="visible" [style.left.px]="position.x" [style.top.px]="position.y"
+    role="tooltip" aria-live="polite">
+
+    <div class="tooltip-content">
+        <div class="tooltip-header" *ngIf="title">
+            <div class="tooltip-title">{{ title }}</div>
+        </div>
+
+        <div class="tooltip-items">
+            <div class="tooltip-item" *ngFor="let item of data">
+                <span class="tooltip-color" *ngIf="item.color" [style.background-color]="item.color"
+                    aria-hidden="true"></span>
+                <span class="tooltip-label">{{ item.label }}:</span>
+                <span class="tooltip-value">{{ item.value }}</span>
+            </div>
+        </div>
+    </div>
+</div>

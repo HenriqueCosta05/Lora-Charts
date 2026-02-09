@@ -1,0 +1,20 @@
+<div class="legend-container" [class.legend-horizontal]="orientation === 'horizontal'"
+    [class.legend-vertical]="orientation === 'vertical'" [class.legend-interactive]="interactive"
+    [class]="'legend-' + position" role="list" aria-label="Chart legend">
+
+    <div *ngFor="let item of items" class="legend-item" [class.legend-item-hidden]="item.visible === false"
+        [class.legend-item-active]="isVisible(item)" (click)="onItemClick(item)" (mouseenter)="onItemMouseEnter(item)"
+        (mouseleave)="onItemMouseLeave()" role="listitem"
+        [attr.aria-label]="item.label + (item.value ? ': ' + item.value : '')">
+
+        <span [class]="getShapeClass(item)"
+            [style.background-color]="(item.shape !== 'line' && item.shape !== 'rect') ? item.color : 'transparent'"
+            [style.border-color]="item.color" aria-hidden="true">
+        </span>
+
+        <span class="legend-label-container">
+            <span class="legend-label">{{ item.label }}</span>
+            <span class="legend-value" *ngIf="item.value">{{ item.value }}</span>
+        </span>
+    </div>
+</div>

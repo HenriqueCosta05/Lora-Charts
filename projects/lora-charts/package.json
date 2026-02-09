@@ -1,0 +1,40 @@
+{
+  "name": "lora-charts",
+  "version": "0.0.2",
+  "description": "A modern Angular chart library built with D3.js — bar, line, area, pie, scatter, heatmap, treemap, gauge, word cloud, and world map components.",
+  "keywords": [
+    "angular",
+    "charts",
+    "d3",
+    "data-visualization",
+    "bar-chart",
+    "line-chart",
+    "pie-chart",
+    "heatmap",
+    "wordcloud",
+    "worldmap",
+    "treemap",
+    "gauge",
+    "scatter",
+    "area-chart",
+    "svg"
+  ],
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/your-username/lora-charts.git"
+  },
+  "peerDependencies": {
+    "@angular/common": "^21.0.0",
+    "@angular/core": "^21.0.0",
+    "@angular/platform-browser": "^21.0.0",
+    "d3": "^7.0.0",
+    "rxjs": "^7.0.0"
+  },
+  "dependencies": {
+    "tslib": "^2.3.0",
+    "d3-cloud": "^1.2.7",
+    "topojson-client": "^3.1.0"
+  },
+  "sideEffects": false
+}

@@ -6,6 +6,11 @@
     "strict": true,
     "noImplicitOverride": true,
     "noPropertyAccessFromIndexSignature": true,
+    "paths": {
+      "lora-charts": [
+        "./dist/lora-charts"
+      ]
+    },
     "noImplicitReturns": true,
     "noFallthroughCasesInSwitch": true,
     "skipLibCheck": true,
@@ -25,6 +30,12 @@
   "references": [
     {
       "path": "./tsconfig.app.json"
+    },
+    {
+      "path": "./projects/lora-charts/tsconfig.lib.json"
+    },
+    {
+      "path": "./projects/lora-charts/tsconfig.spec.json"
     }
   ]
 }
