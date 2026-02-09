@@ -10,6 +10,18 @@
 /node_modules
 npm-debug.log
 yarn-error.log
+pnpm-debug.log
+
+# npm publish
+*.tgz
+
+# Environment
+.env
+.env.*
+!.env.example
+
+# Angular
+/.angular/cache
 
 # IDEs and editors
 .idea/
@@ -29,19 +41,27 @@ yarn-error.log
 !.vscode/mcp.json
 .history/*
 
+# Testing
+/coverage
+testem.log
+__screenshots__/
+
+# Storybook
+*storybook.log
+storybook-static
+
+# Documentation
+/documentation
+documentation.json
+/compodoc
+
 # Miscellaneous
-/.angular/cache
 .sass-cache/
 /connect.lock
-/coverage
 /libpeerconnection.log
-testem.log
 /typings
-__screenshots__/
 
 # System files
 .DS_Store
 Thumbs.db
-
-*storybook.log
-storybook-static
+desktop.ini
