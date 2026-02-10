@@ -1,6 +1,6 @@
 {
   "name": "lora-charts",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "description": "A modern Angular chart library built with D3.js — bar, line, area, pie, scatter, heatmap, treemap, gauge, word cloud, and world map components.",
   "keywords": [
     "angular",
