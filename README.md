@@ -9,14 +9,13 @@ A modern, interactive charting library built with Angular and D3.js, featuring b
 
 ## ✨ Features
 
-- **10 Chart Types**: Bar, Line, Area, Pie, Scatter, Heatmap, Treemap, Gauge, Wordcloud, and more
+- **+10 Chart Types**: Bar, Line, Area, Pie, Scatter, Heatmap, Treemap, Gauge, Wordcloud, and more
 - **Modern Design**: Glass-morphism effects with smooth animations
 - **Interactive**: Tooltips, zoom, hover effects, and customization options
 - **TypeScript**: Fully typed for better developer experience
 - **Responsive**: Adapts to different screen sizes
 - **Theme Support**: Customizable themes with CSS variables
 - **Storybook**: Interactive documentation and component playground
-- **Tested**: Unit tests with Vitest
 
 ## 📦 Installation
 
@@ -190,7 +189,7 @@ Each chart accepts a `config` object for customization:
 ## 🔧 Development
 
 ### Prerequisites
-- Node.js 18+
+- Node.js 22+
 - npm 11.7.0
 
 ### Setup
@@ -202,20 +201,8 @@ git clone https://github.com/HenriqueCosta05/Lora_DS
 # Install dependencies
 npm install
 
-# Start development server
-npm start
-
 # Run Storybook
 npm run storybook
-
-# Run tests
-npm test
-
-# Run tests with UI
-npm run test:ui
-
-# Generate coverage report
-npm run test:coverage
 ```
 
 ### Project Structure
@@ -259,24 +246,6 @@ npm run storybook
 
 Then navigate to `http://localhost:6006`
 
-## 🧪 Testing
-
-Lora Charts uses Vitest for unit testing:
-
-```bash
-# Run all tests
-npm test
-
-# Watch mode
-npm run test:watch
-
-# UI mode
-npm run test:ui
-
-# Coverage report
-npm run test:coverage
-```
-
 ## 🤝 Contributing
 
 Contributions are welcome! Please feel free to submit a Pull Request.
@@ -289,7 +258,7 @@ Contributions are welcome! Please feel free to submit a Pull Request.
 
 ## 📝 License
 
-This project is private. See the repository for licensing information.
+This project is open-source. See the repository for licensing information.
 
 ## 🔗 Links
 
